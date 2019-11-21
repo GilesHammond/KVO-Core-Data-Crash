@@ -26,7 +26,7 @@ public class Matter: Point
     
     @objc dynamic public var hosts: [Point] {
        hostsObservation = observe(\Matter.subs) { [unowned self] _, _ in }
-       return subs
+       return []
     }
     
     private var hostsObservation: NSKeyValueObservation?
