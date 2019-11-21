@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Matter" representedClassName=".Matter" isAbstract="YES" parentEntity="Point" syncable="YES" codeGenerationType="category"/>
+    <entity name="Point" representedClassName=".Point" isAbstract="YES" syncable="YES" codeGenerationType="category">
+        <attribute name="pointID_" attributeType="String"/>
+    </entity>
+    <entity name="Subject" representedClassName=".Subject" parentEntity="Matter" syncable="YES" codeGenerationType="category">
+        <attribute name="documentID_" optional="YES" attributeType="String"/>
+        <attribute name="title_" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Matter" positionX="-27" positionY="54" width="128" height="43"/>
+        <element name="Point" positionX="-30.4765625" positionY="-133.21875" width="128" height="58"/>
+        <element name="Subject" positionX="-25.265625" positionY="158.0703125" width="128" height="73"/>
+    </elements>
+</model>

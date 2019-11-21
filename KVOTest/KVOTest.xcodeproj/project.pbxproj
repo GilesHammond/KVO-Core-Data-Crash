@@ -9,24 +9,45 @@
 /* Begin PBXBuildFile section */
 		081024DC2371C1B40036F7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081024DB2371C1B40036F7B4 /* AppDelegate.swift */; };
 		081024DE2371C1B40036F7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081024DD2371C1B40036F7B4 /* ViewController.swift */; };
-		081024E12371C1B40036F7B4 /* KVOTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 081024DF2371C1B40036F7B4 /* KVOTest.xcdatamodeld */; };
 		081024E32371C1B70036F7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081024E22371C1B70036F7B4 /* Assets.xcassets */; };
 		081024E62371C1B80036F7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081024E42371C1B80036F7B4 /* Main.storyboard */; };
-		081024FA2371C27F0036F7B4 /* Connection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081024F62371C27F0036F7B4 /* Connection+CoreDataClass.swift */; };
-		081024FC2371C27F0036F7B4 /* Thing+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081024F82371C27F0036F7B4 /* Thing+CoreDataClass.swift */; };
+		08A34D73238559DF0021B340 /* FrameGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A34D6B238555260021B340 /* FrameGraph.framework */; };
+		08A34D74238559DF0021B340 /* FrameGraph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A34D6B238555260021B340 /* FrameGraph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08A34D6A238555260021B340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A34D63238555260021B340 /* FrameGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 083821EA2383F87F0060E4EA;
+			remoteInfo = FrameGraph_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08A34D75238559DF0021B340 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08A34D74238559DF0021B340 /* FrameGraph.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		081024D82371C1B40036F7B4 /* KVOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081024DB2371C1B40036F7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		081024DD2371C1B40036F7B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		081024E02371C1B40036F7B4 /* KVOTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KVOTest.xcdatamodel; sourceTree = "<group>"; };
 		081024E22371C1B70036F7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081024E52371C1B80036F7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		081024E72371C1B80036F7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081024E82371C1B80036F7B4 /* KVOTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KVOTest.entitlements; sourceTree = "<group>"; };
-		081024F62371C27F0036F7B4 /* Connection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+CoreDataClass.swift"; sourceTree = "<group>"; };
-		081024F82371C27F0036F7B4 /* Thing+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thing+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08A34D63238555260021B340 /* FrameGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrameGraph.xcodeproj; path = FrameGraph/FrameGraph.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A34D73238559DF0021B340 /* FrameGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,10 +65,10 @@
 		081024CF2371C1B40036F7B4 = {
 			isa = PBXGroup;
 			children = (
-				081024F62371C27F0036F7B4 /* Connection+CoreDataClass.swift */,
-				081024F82371C27F0036F7B4 /* Thing+CoreDataClass.swift */,
 				081024DA2371C1B40036F7B4 /* KVOTest */,
+				0838225A238429B10060E4EA /* Modules */,
 				081024D92371C1B40036F7B4 /* Products */,
+				0838227F23842B020060E4EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,9 +89,31 @@
 				081024E42371C1B80036F7B4 /* Main.storyboard */,
 				081024E72371C1B80036F7B4 /* Info.plist */,
 				081024E82371C1B80036F7B4 /* KVOTest.entitlements */,
-				081024DF2371C1B40036F7B4 /* KVOTest.xcdatamodeld */,
 			);
 			path = KVOTest;
+			sourceTree = "<group>";
+		};
+		0838225A238429B10060E4EA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				08A34D63238555260021B340 /* FrameGraph.xcodeproj */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0838227F23842B020060E4EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A34D64238555260021B340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A34D6B238555260021B340 /* FrameGraph.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +126,7 @@
 				081024D42371C1B40036F7B4 /* Sources */,
 				081024D52371C1B40036F7B4 /* Frameworks */,
 				081024D62371C1B40036F7B4 /* Resources */,
+				08A34D75238559DF0021B340 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,12 +163,28 @@
 			mainGroup = 081024CF2371C1B40036F7B4;
 			productRefGroup = 081024D92371C1B40036F7B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08A34D64238555260021B340 /* Products */;
+					ProjectRef = 08A34D63238555260021B340 /* FrameGraph.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				081024D72371C1B40036F7B4 /* KVOTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08A34D6B238555260021B340 /* FrameGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FrameGraph.framework;
+			remoteRef = 08A34D6A238555260021B340 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		081024D62371C1B40036F7B4 /* Resources */ = {
@@ -142,10 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081024FC2371C27F0036F7B4 /* Thing+CoreDataClass.swift in Sources */,
 				081024DE2371C1B40036F7B4 /* ViewController.swift in Sources */,
-				081024FA2371C27F0036F7B4 /* Connection+CoreDataClass.swift in Sources */,
-				081024E12371C1B40036F7B4 /* KVOTest.xcdatamodeld in Sources */,
 				081024DC2371C1B40036F7B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -291,6 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exploreandcreate.KVOTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -311,6 +370,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exploreandcreate.KVOTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -339,19 +399,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		081024DF2371C1B40036F7B4 /* KVOTest.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				081024E02371C1B40036F7B4 /* KVOTest.xcdatamodel */,
-			);
-			currentVersion = 081024E02371C1B40036F7B4 /* KVOTest.xcdatamodel */;
-			path = KVOTest.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 081024D02371C1B40036F7B4 /* Project object */;
 }
